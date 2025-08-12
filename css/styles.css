@@ -563,9 +563,9 @@ address {
 }
 
 .footer-soc {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 .footer-soc-title {
@@ -591,7 +591,6 @@ address {
 .footer-soc-icon-list {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   gap: 16px;
 }
 
@@ -613,13 +612,12 @@ address {
 
 .scr-form-block {}
 
+
 .subscribe-form {
   display: flex;
-  justify-content: space-around;
-
+  justify-content: center;
+  gap: 24px;
 }
-
-.subscribe-form {}
 
 .subscribe-title {
   font-weight: 500;
@@ -630,7 +628,6 @@ address {
   margin-bottom: 16px;
 
 }
-
 
 .user-scr-label {}
 
@@ -643,13 +640,12 @@ address {
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
-  padding: 8px 16px;
+  padding-left: 16px;
   font-weight: 400;
   font-size: 12px;
   line-height: 2.0;
   letter-spacing: 0.04em;
   color: var(--white);
-  margin-right: 24px;
 
 
 }
@@ -675,7 +671,6 @@ address {
   height: 40px;
   background-color: var(--iris);
   color: var(--white);
-  text-align: left;
   padding: 8px 24px;
 
 
@@ -728,7 +723,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 24px;
+  padding: 72px 24px 24px 24px;
 
   background: var(--dairy);
 
@@ -736,6 +731,7 @@ address {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 
   min-height: 584px;
+  min-width: 408px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
 }
@@ -758,8 +754,8 @@ address {
   border-radius: 50%;
   fill: var(--navy-blue);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  ;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--cornflower);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-bottom: 24px;
   padding: 0;
   cursor: pointer;
@@ -774,7 +770,7 @@ address {
 }
 
 .close-icon {
-  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -801,8 +797,7 @@ address {
       Inputs Name Phone Email 
 ---------------*/
 
-.input-block {
-  position: relative;
+.label-block {
   margin-bottom: 8px;
 }
 
@@ -814,6 +809,10 @@ address {
   letter-spacing: 0.04em;
   color: var(--light-slate);
   margin-bottom: 4px;
+}
+
+.input-block {
+  position: relative;
 }
 
 .form-input {
@@ -862,7 +861,7 @@ address {
 
 }
 
-.user-comment {
+/* .user-comment {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -870,7 +869,7 @@ address {
   color: var(--light-slate);
   display: block;
   margin-bottom: 4px;
-}
+} */
 
 .text-comment {
   width: 100%;
