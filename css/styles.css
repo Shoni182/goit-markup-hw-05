@@ -611,20 +611,23 @@ address {
       Footer Subscribe - input 
 ---------------*/
 
+.scr-form-block {}
+
 .subscribe-form {
-  /* display: flex;
-  align-items: end; */
-  display: inline-flex;
-  align-items: end;
-  /* justify-content: center; */
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
 }
 
-.subscribe-form label {
+.subscribe-form {}
+
+.subscribe-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
+  margin-bottom: 16px;
 
 }
 
@@ -646,8 +649,7 @@ address {
   line-height: 2.0;
   letter-spacing: 0.04em;
   color: var(--white);
-  margin-top: 16px;
-  margin-right: 24px;
+
 
 }
 
@@ -662,7 +664,9 @@ address {
 }
 
 .scr-btn {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: inherit;
   border: none;
   border-radius: 4px;
@@ -678,11 +682,9 @@ address {
 }
 
 .btn-scr-icon {
-  position: absolute;
-  right: 24px;
-  top: 50%;
-  transform: translateY(-50%);
+
   fill: var(--white);
+  margin-left: 16px;
 }
 
 
